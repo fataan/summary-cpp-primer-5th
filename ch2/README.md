@@ -76,7 +76,8 @@ A value, such as 42, is known as a literal becaus its value self-evident. Every 
 
 #### Integer Literals
 ```cpp
-
+20 /* decimal */ 024 /* octal */ 0x14 /* hexadecimal */
+```
 Integer literals are expressed in two types i.e.,
 1. Prefixes which indicates the base.
 2. Suffixes which indicates the type.
@@ -151,11 +152,10 @@ the list has the type defined by the type specifier. A definition may (optionall
 an initial value for one or more of the names it defines:
 ```cpp
 int sum = 0, value, // sum, value, and units_sold have type int
- units_sold = 0; // sum and units_sold have initial value 0
+units_sold = 0; // sum and units_sold have initia value 0
 Sales_item item; // item has type Sales_item (see § 1.5.1 (p. 20))
 // string is a library type, representing a variable-length sequence of characters
-std::string book("0-201-78345-X"); // book initialized from string
-literal
+std::string book("0-201-78345-X"); // book initialized from string literal
 ```
 #### Initializers
 An object that is initialized gets the specified value at the moment it is created.
@@ -202,7 +202,7 @@ and may not provide an explicit initializer:
 ```cpp
 extern int i; // declaration but no define i
 int j; // declaration and define j
-extern int k = 3; declaration and define k. Any declaration that includes an explicit initializer is a definition.
+extern int k = 3; //declaration and define k. Any declaration that includes an explicit initializer is a definition.
 ```
 It is an error to provide an initializer on an extern inside a function.
 
